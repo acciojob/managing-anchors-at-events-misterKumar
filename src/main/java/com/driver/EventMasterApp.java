@@ -14,6 +14,8 @@ public class EventMasterApp {
     @Autowired
     public EventMasterApp(AnchorService anchorService, List<Anchor> anchors) {
     	// your code goes here
+        this.anchorService=anchorService;
+        this.anchors=anchors;
     }
 
     public Anchor start(Event event) {

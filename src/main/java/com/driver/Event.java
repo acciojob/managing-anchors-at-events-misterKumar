@@ -8,6 +8,9 @@ public class Event {
     // Constructor
     public Event(String eventType, String languageRequired, int duration) {
     	// your code goes here
+        this.eventType = eventType;
+        this.languageRequired = languageRequired;
+        this.duration = duration;
     }
 
     // Getters and Setters
@@ -18,6 +21,7 @@ public class Event {
 
     public void setEventType(String eventType) {
     	// your code goes here
+        this.eventType = eventType;
     }
 
     public String getLanguageRequired() {
@@ -27,6 +31,7 @@ public class Event {
 
     public void setLanguageRequired(String languageRequired) {
     	// your code goes here
+        this.languageRequired = languageRequired;
     }
 
     public int getDuration() {
@@ -36,5 +41,6 @@ public class Event {
 
     public void setDuration(int duration) {
     	// your code goes here
+        this.duration = duration;
     }
 }

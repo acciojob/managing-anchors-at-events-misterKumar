@@ -15,7 +15,16 @@ public class ManagingAnchorsAtEventsSolutionApplication {
 	@Bean
     public CommandLineRunner commandLineRunner(EventMasterApp eventMasterApp) {
 		// your code goes here
-		return null;
+		return args -> {
+			// You can handle user input here and then call the start method of EventMasterApp
+			// For demonstration, let's assume default event
+			Anchor recommendedAnchor = eventMasterApp.start();
+			if (recommendedAnchor != null) {
+				System.out.println("Recommended Anchor: " + recommendedAnchor.getName());
+			} else {
+				System.out.println("No suitable anchor found.");
+			}
+		};
     }
 
 }

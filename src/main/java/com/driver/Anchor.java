@@ -13,6 +13,10 @@ public class Anchor {
 
     public Anchor(String name, String languageExpertise, String type, int maxDuration) {
     	// your code goes here
+        this.name=name;
+        this.languageExpertise=languageExpertise;
+        this.type=type;
+        this.maxDuration=maxDuration;
     }
 
     // Getters and Setters
@@ -23,6 +27,7 @@ public class Anchor {
 
     public void setName(String name) {
     	// your code goes here
+        this.name=name;
     }
 
     public String getLanguageExpertise() {
@@ -32,6 +37,7 @@ public class Anchor {
 
     public void setLanguageExpertise(String languageExpertise) {
     	// your code goes here
+        this.languageExpertise=languageExpertise;
     }
 
     public String getType() {
@@ -41,6 +47,7 @@ public class Anchor {
 
     public void setType(String type) {
     	// your code goes here
+        this.type=type;
     }
 
     public int getMaxDuration() {
@@ -50,5 +57,6 @@ public class Anchor {
 
     public void setMaxDuration(int maxDuration) {
     	// your code goes here
+        this.maxDuration=maxDuration;
     }
 }
